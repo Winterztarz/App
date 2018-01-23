@@ -8,14 +8,15 @@ html, body {
   background: linear-gradient(to right, #928DAB, #1F1C2C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   }
+#register, #login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 body {
   font-family: 'Arial';
   margin: 0;
-  /*Flexbox*/
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
 }
 form {
   width: 30%;
@@ -49,4 +50,47 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 16px;
+}
+
+.link {
+  color: #fff;
+  font-size: 16px;
+  margin: 10px auto 0;
+  line-height: 40px;
+}
+#alert {
+  color: #fff;
+  font-size: 26px;
+  margin: 16px auto 0;
+  line-height: 20px;
+  text-align: center;
+}
+nav {
+  background: #242424;
+  color: #fff;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+}
+nav a {
+  float: right;
+}
+nav h1 {
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section {
+  background: #ffffff;
+  width: 360px;
+  margin: 100px auto;
+  padding: 16px;
+}
+section h1{
+  margin: 0 auto;
+  text-align: left;
 }

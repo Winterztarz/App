@@ -1,4 +1,7 @@
 <?php
+
+  $appName = "List";
+
   function usernameExists($username) {
     global $connection;
 

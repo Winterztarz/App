@@ -1,9 +1,36 @@
 /**{
   box-sizing: border-box;
 }*/
+
 html, body {
   height: 100%;
   }
+
+  /*splash screen*/
+  #splashScreen {
+    align-items: center;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  #splashScreen:before {
+    animation-name: splashScreenAnimation;
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    background: url(../img/listLogo.svg) no-repeat center;
+    content: '';
+    display: block;
+    height: 33.33333333%;
+    width: 33.33333333%;
+  }
+
+  /*splash screen end*/
 body {
   font-family: 'Arial';
   margin: 0;
@@ -21,4 +48,52 @@ video {
 }
 main {
   width: 520px;
+  text-align: center;
 }
+main h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 80px;
+  text-transform: uppercase;
+  letter-spacing: 16px;
+  text-shadow: 5px 3px #292929;
+  margin-bottom: 2px;
+  margin-top: 20px;
+}
+main p {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+}
+main a {
+text-align: center;
+padding: 16px 32px;
+font-size: 26px;
+border-radius: 10px;
+background: #cccccc;
+color: #000;
+border: none;
+display: inline-block;
+margin-bottom: 10px;
+}
+img {
+  width: 60%;
+}
+
+/*animations*/
+@keyframes splashScreenAnimation {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  75% {
+    opacity: 1;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+/*animations end*/

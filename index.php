@@ -1,4 +1,5 @@
 <?php
+$title = "List App";
 $bodyClass = "d-flex justify-content-center align-items-center";
 include 'includes/header.php';
 
@@ -14,10 +15,10 @@ $num_rows = mysqli_num_rows($result);
     </video>
 
 
-<main class="animated fadeInDown">
+<main class="col-12 col-sm-8 col-lg-4 animated fadeInDown text-center">
   <h1>List</h1>
   <img src="img/listLogo.svg" class="img-fluid" alt="List">
-  <p> An online to-do list with <?php echo $num_rows;  ?> members! </p>
+  <p> An online to-do list with <span><?php echo $num_rows;  ?></span> members! </p>
   <a class="button" href="login.php">Log in</a>
   <a class="button" href="register.php">Register</a>
 </main>

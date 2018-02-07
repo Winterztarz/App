@@ -9,7 +9,7 @@
       $taskID = $_POST['taskID'];
       $query = "DELETE FROM tasks WHERE id = $taskID";
       $deleteTaskQuery = mysqli_query($connection, $query);
-      header("Location: index.php");
+      header("Location: admin.php");
   }
 ?>
 

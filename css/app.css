@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }*/
 
+
+
 html, body {
   height: 100%;
   }
@@ -9,8 +11,9 @@ html, body {
   /*splash screen*/
   #splashScreen {
     align-items: center;
-    background: #000000;
+    background: radial-gradient(#161616, #363636);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     z-index: 2;
     position: fixed;
@@ -29,11 +32,39 @@ html, body {
     height: 33.33333333%;
     width: 33.33333333%;
   }
+  #splashScreen blockquote {
+    margin: 0;
+    color: #ecf0f1;
+  }
+  #quote {
+    margin: 0;
+    font-size: 26px;
+  }
+  #quote:before, #quote:after {
+    display: inline-block;
+  }
+  #quote:before {
+    content: '“';
+    margin: 0 5px 0 0;
+  }
+  #quote:after {
+    content: '”';
+    margin: 0 0 0 5px;
+  }
+  #author {
+    float: right;
+    font-size: 20px;
+  }
+  #author:before {
+    content: "—";
+    margin: 0 5px 0 0;
+  }
 
   /*splash screen end*/
 body {
   font-family: 'Arial';
   margin: 0;
+  background: #919191;
 }
 video {
   object-fit: cover;
@@ -46,9 +77,8 @@ video {
   top: 0;
   z-index: -1;
 }
-main {
-  width: 520px;
-  text-align: center;
+main img {
+  margin: 0 auto 40px;
 }
 main h1 {
   text-align: center;
@@ -66,6 +96,11 @@ main p {
   font-size: 20px;
   margin-top: 20px;
 }
+main p span{
+  font-weight: bold;
+  color: #00DEFF;
+
+}
 main a {
 text-align: center;
 padding: 16px 32px;
@@ -79,6 +114,23 @@ margin-bottom: 10px;
 }
 img {
   width: 60%;
+}
+.navbar-brand img {
+  height: 50px;
+  width: 50px;
+}
+#tasks {
+  background: #fff;
+  border-radius: 6px;
+  margin: 40px auto 0;
+  padding: 30px;
+  text-align: center;
+}
+#tasks h2 {
+display: inline-block;
+margin: 0 auto 20px;
+border-bottom: 1px solid #161616;
+padding: 0 20px 5px;
 }
 
 /*animations*/

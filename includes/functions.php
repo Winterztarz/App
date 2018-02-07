@@ -33,4 +33,19 @@
       echo "he funka itt!";
     }
   }
+
+  function fixUsernameTitle() {
+    global $title;
+  if (isset($_SESSION['username'])) {
+    $username = $_SESSION['username'];
+    if (strlen($username) > 0) {
+      if ($username[strlen($username) -1] !== 's') {
+          $title = $username . 's' . ' tasks';
+      }
+      else {
+        $title = $username . ' tasks';
+      }
+    }
+  }
+  }
  ?>
